@@ -10,6 +10,7 @@
     color:#09a8fa;
     margin-left: 10px;
     font-size: 25px;
+    animation: fadeIn ease 10s;
 }
 
 .navbar h3 {
@@ -125,7 +126,7 @@
         right: -10px;
         background-color: #41444b;
         width: 100%;
-        display: block;
+        display: none;
         text-align: center;
     }
 

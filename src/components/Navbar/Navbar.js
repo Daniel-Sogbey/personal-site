@@ -4,10 +4,10 @@ import classes from "./Navbar.css";
 const Navbar = () => {
 	const toggleMenu = () => {
 		const menu = document.getElementsByClassName(classes.nav);
-		if (menu[0].style.display === "none") {
-			menu[0].style.display = "block";
-		} else {
+		if (menu[0].style.display === "block") {
 			menu[0].style.display = "none";
+		} else {
+			menu[0].style.display = "block";
 		}
 		console.log(menu);
 	};
