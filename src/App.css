@@ -2,4 +2,34 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    /* overflow: hidden; */
   }
+
+  .content{
+    height: 500px;
+  }
+
+
+.video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: -1;
+
+}
+
+video {
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width:600px){
+  .content {
+  height: 100%;
+  }
+
+  .video {
+    height:100%;
+  }
+}

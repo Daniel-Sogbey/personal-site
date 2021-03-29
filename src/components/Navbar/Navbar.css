@@ -1,9 +1,9 @@
 .navbar{
-    background: #41444b;
+    background: transparent;
     display: flex;
     align-items: center;
     text-decoration: none;
-    height: 60px;
+    height: 90px;
 }
 
 .navbar i {
@@ -17,7 +17,7 @@
     margin: 10px;
     padding: 15px;
     color: #e5e5e5;
-    animation: fadeIn ease 20s;
+    animation: fadeIn ease 10s;
 }
 
 .navbar h3:hover {
@@ -30,7 +30,7 @@
 
 .navbar li i {
     font-size: 20px;
-    color: #ff6b6b;
+    color: #09a8fa;
     margin-right: 5px;
 }
 
@@ -60,9 +60,9 @@
 .nav {
     list-style-type:none;
     display: flex;
-    margin: 10px;
     position: absolute;
     right: 10px;
+    align-items: center;
 }
 
 .nav li {
@@ -123,7 +123,7 @@
     .nav {
         position: absolute;
         top: 60px;
-        right: -10px;
+        right: 0;
         background-color: #41444b;
         width: 100%;
         display: none;
