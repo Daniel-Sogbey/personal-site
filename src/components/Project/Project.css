@@ -1,0 +1,33 @@
+.card {
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: 25%;
+    height: 250px;
+    text-align: center;
+    
+}
+
+
+.description{
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    border: 1px solid #fff;
+    
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+}
+
+.description h1 {
+    color: #fff;
+}

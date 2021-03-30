@@ -5,9 +5,7 @@
     /* overflow: hidden; */
   }
 
-  .content{
-    height: 500px;
-  }
+
 
 
 .video {
@@ -16,7 +14,7 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: -1;
-
+height: 100%;
 }
 
 video {
