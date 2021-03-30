@@ -1,7 +1,8 @@
 import React from "react";
 import classes from "./Navbar.css";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+const Navbar = ({ title }) => {
 	const toggleMenu = () => {
 		const menu = document.getElementsByClassName(classes.nav);
 		if (menu[0].style.display === "block") {
@@ -15,7 +16,9 @@ const Navbar = () => {
 	return (
 		<div className={classes.navbar}>
 			<i class="fas fa-biking" />
-			<h3>DaN SoGbEy</h3>
+			<h3>
+				{title}
+			</h3>
 			<div className={classes.menu}>
 				<i className="fas fa-bars" onClick={toggleMenu} />
 			</div>
@@ -24,13 +27,17 @@ const Navbar = () => {
 					<i class="fas fa-meteor" />
 					About
 				</li>
-
-				<li>
-					<i class="fas fa-file" />Resume
-				</li>
 			</ul>
 		</div>
 	);
+};
+
+Navbar.defaultProps = {
+	title: "DaN SoGbEy",
+};
+
+Navbar.propTypes = {
+	title: PropTypes.string.isRequired,
 };
 
 export default Navbar;

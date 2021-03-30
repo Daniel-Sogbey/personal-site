@@ -32,8 +32,14 @@ class App extends Component {
 					</div>
 					<div>
 						<Navbar />
+						<div className={classes.projects}>
+							<Project description="Project 1" />
+							<Project description="Project 2" />
+							<Project description="Project 3" />
+							<Project description="Project 4" />
+							<Project description="Project 5" />
+						</div>
 						<Switch>
-							{/* <Project /> */}
 							{/* <Route exact path="/about" component={About} /> */}
 						</Switch>
 					</div>

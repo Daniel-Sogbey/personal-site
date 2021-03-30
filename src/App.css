@@ -5,7 +5,9 @@
     /* overflow: hidden; */
   }
 
-
+.content {
+  height: 100%;
+}
 
 
 .video {
@@ -18,8 +20,17 @@ height: 100%;
 }
 
 video {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width:600px){
@@ -27,7 +38,13 @@ video {
   height: 100%;
   }
 
+  .projects {
+    display:block;
+    
+  }
+
   .video {
     height:100%;
   }
 }
+
