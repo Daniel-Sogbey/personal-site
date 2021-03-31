@@ -1,3 +1,6 @@
+
+
+
 .navbar{
     /* background-image: linear-gradient(blue,red); */
     background: transparent;
@@ -161,7 +164,7 @@
         content:'';
         border-left:10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid #fff;
+        border-bottom: 10px solid #09a8fa;
         position: absolute;
         top: -10px;
         right: 10px;

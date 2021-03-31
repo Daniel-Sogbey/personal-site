@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Project from "./components/Project/Project";
+import Contact from "./components/Contact/Contact";
 // import About from "./components/About/About";
 // import Footer from "./components/Footer/Footer";
 import classes from "./App.css";
@@ -47,32 +48,40 @@ class App extends Component {
 						</video>
 					</div>
 					<div>
-						<Navbar toggle={this.toggleMenu} />
+						<Navbar about="About" toggle={this.toggleMenu} />
+						<hr className={(classes.dottedLines, classes.lines)} />
 						<div className={classes.projects}>
 							<Project image={shop} link="/" description="Shop App" />
+							<hr className={(classes.dottedLines, classes.lines)} />
 							<Project
 								image={grandpa}
 								link="/"
 								description="Online GrandPa App"
 							/>
+							<hr className={(classes.dottedLines, classes.lines)} />
 							<Project
 								image={payment}
 								link="/"
 								description="Payment Gateway App"
 							/>
+							<hr className={(classes.dottedLines, classes.lines)} />
 							<Project
 								image={streaming}
 								link="/"
 								description="Video Streaming App"
 							/>
 						</div>
+						<div className={classes.contact}>
+							<Contact />
+						</div>
 						<Switch>
 							{/* <Route exact path="/about" component={About} /> */}
 						</Switch>
+						<hr className={(classes.dottedLines, classes.lines)} />
 						<Navbar
 							title="by DaN@2021"
 							icon1="fab fa-github"
-							icon2="fas fa-heart"
+							icon2="fas fa-meteor"
 						/>
 					</div>
 				</div>

@@ -24,7 +24,7 @@ const Navbar = ({ title, about, icon1, icon2, toggle }) => {
 
 Navbar.defaultProps = {
 	title: "DaN SoGbEy",
-	about: "About",
+	about: "",
 	icon1: "fas fa-biking",
 	icon2: "fas fa-bars",
 };
