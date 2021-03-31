@@ -6,6 +6,11 @@ import Project from "./components/Project/Project";
 // import Footer from "./components/Footer/Footer";
 import classes from "./App.css";
 import video from "./videos/pied-piper-video.mp4";
+import grandpa from "./images/online-grandpa.png";
+import payment from "./images/payment-gateway.png";
+import shop from "./images/shop.webp";
+import streaming from "./images/video-streaming.jpg";
+import navClasses from "./components/Navbar/Navbar.css";
 
 class App extends Component {
 	// componentDidMount() {
@@ -20,6 +25,17 @@ class App extends Component {
 	// }
 	// }
 	//
+
+	toggleMenu = () => {
+		const menu = document.getElementsByClassName(navClasses.nav);
+		if (menu[0].style.display === "block") {
+			menu[0].style.display = "none";
+		} else {
+			menu[0].style.display = "block";
+		}
+		console.log(menu);
+	};
+
 	render() {
 		// const src = "./videos/pied-piper-video.mp4";
 		return (
@@ -31,17 +47,33 @@ class App extends Component {
 						</video>
 					</div>
 					<div>
-						<Navbar />
+						<Navbar toggle={this.toggleMenu} />
 						<div className={classes.projects}>
-							<Project description="Project 1" />
-							<Project description="Project 2" />
-							<Project description="Project 3" />
-							<Project description="Project 4" />
-							<Project description="Project 5" />
+							<Project image={shop} link="/" description="Shop App" />
+							<Project
+								image={grandpa}
+								link="/"
+								description="Online GrandPa App"
+							/>
+							<Project
+								image={payment}
+								link="/"
+								description="Payment Gateway App"
+							/>
+							<Project
+								image={streaming}
+								link="/"
+								description="Video Streaming App"
+							/>
 						</div>
 						<Switch>
 							{/* <Route exact path="/about" component={About} /> */}
 						</Switch>
+						<Navbar
+							title="by DaN@2021"
+							icon1="fab fa-github"
+							icon2="fas fa-heart"
+						/>
 					</div>
 				</div>
 

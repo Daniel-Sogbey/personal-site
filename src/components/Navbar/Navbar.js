@@ -2,30 +2,20 @@ import React from "react";
 import classes from "./Navbar.css";
 import PropTypes from "prop-types";
 
-const Navbar = ({ title }) => {
-	const toggleMenu = () => {
-		const menu = document.getElementsByClassName(classes.nav);
-		if (menu[0].style.display === "block") {
-			menu[0].style.display = "none";
-		} else {
-			menu[0].style.display = "block";
-		}
-		console.log(menu);
-	};
-
+const Navbar = ({ title, about, icon1, icon2, toggle }) => {
 	return (
 		<div className={classes.navbar}>
-			<i class="fas fa-biking" />
+			<i class={icon1} />
 			<h3>
 				{title}
 			</h3>
 			<div className={classes.menu}>
-				<i className="fas fa-bars" onClick={toggleMenu} />
+				<i className={icon2} onClick={toggle} />
 			</div>
 			<ul className={classes.nav}>
 				<li>
 					<i class="fas fa-meteor" />
-					About
+					{about}
 				</li>
 			</ul>
 		</div>
@@ -34,10 +24,16 @@ const Navbar = ({ title }) => {
 
 Navbar.defaultProps = {
 	title: "DaN SoGbEy",
+	about: "About",
+	icon1: "fas fa-biking",
+	icon2: "fas fa-bars",
 };
 
 Navbar.propTypes = {
 	title: PropTypes.string.isRequired,
+	about: PropTypes.string.isRequired,
+	icon1: PropTypes.string.isRequired,
+	icon2: PropTypes.string.isRequired,
 };
 
 export default Navbar;
