@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact/Contact";
+import Updates from "./components/Updates/Updates";
 // import About from "./components/About/About";
 // import Footer from "./components/Footer/Footer";
 import classes from "./App.css";
@@ -71,9 +72,16 @@ class App extends Component {
 								description="Video Streaming App"
 							/>
 						</div>
-						<div className={classes.contact}>
-							<Contact />
+						<div className={classes.rightC}>
+							<div className={classes.updates}>
+								<Updates />
+								<hr className={(classes.dottedLines, classes.lines)} />
+							</div>
+							<div className={classes.contact}>
+								<Contact />
+							</div>
 						</div>
+
 						<Switch>
 							{/* <Route exact path="/about" component={About} /> */}
 						</Switch>

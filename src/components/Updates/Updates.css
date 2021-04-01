@@ -1,0 +1,17 @@
+h2{
+color: #fff;
+}
+
+.inner p{
+    color: #fff;
+    padding: 5px 5px;
+    letter-spacing: 2.0;
+}
+
+.repos{
+    border: 1px solid #fff;
+    padding: 20px auto;
+    margin:10px auto ;
+    padding:5px 10px;
+   
+}

@@ -55,19 +55,44 @@ video {
   }
 }
 
+.rightC{
+  position: absolute;
+  width: 45%;
+  float: left;
+  right: 0;
+  top: 14%;
+
+  padding: 5px;
+}
+
+
+
+
+.updates {
+  position: relative;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 .contact{
-  position: absolute;
-  right:0;
-  top: 14%;
-  width: 45%;
+  width: 100%;
   text-align: center;
- 
+ margin-top: 10px;
 }
 
 
 
 @media screen and (max-width:600px){
+  .rightC{
+    position: static;
+    width: 100%;
+    text-align: center;
+    
+  }
   .contact{
     position: static;
     /* left: 25%; */
@@ -75,22 +100,23 @@ video {
     text-align: center;
     /* margin: auto; */
   }
+  .updates {
+    position: static;
+   text-align: center;
+    width: 100%;
+  }
   
 .projects {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  position: static;
+  display: block;
   width: 100%;
+  text-align: center;
 }
 
   .content {
   height: 100%;
   }
 
-  .projects {
-    display:block;
-    
-  }
 
   .video {
     height:100%;

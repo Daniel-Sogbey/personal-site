@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Navbar = ({ title, about, icon1, icon2, toggle }) => {
 	return (
 		<div className={classes.navbar}>
-			<i class={icon1} />
+			<i className={icon1} />
 			<h3>
 				{title}
 			</h3>
@@ -14,7 +14,7 @@ const Navbar = ({ title, about, icon1, icon2, toggle }) => {
 			</div>
 			<ul className={classes.nav}>
 				<li>
-					<i class="fas fa-meteor" />
+					<i className="fas fa-meteor" />
 					{about}
 				</li>
 			</ul>
