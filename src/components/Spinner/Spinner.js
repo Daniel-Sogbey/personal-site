@@ -1,20 +1,24 @@
 import React, { Fragment } from "react";
 import spinner from "./spinner.gif";
+import classes from "./Spinner.css";
 
 const Spinner = () => {
 	return (
 		<Fragment>
-			<img
-				src={spinner}
-				style={{
-					width: "200px",
-					margin: "auto",
-					display: "block",
-					textAlign: "center",
-					background: "transparent",
-				}}
-				alt="spinner"
-			/>
+			<div className={classes.spinner}>
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
+			</div>
 		</Fragment>
 	);
 };
