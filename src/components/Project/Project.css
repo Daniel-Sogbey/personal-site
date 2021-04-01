@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     margin: 10px auto;
-    animation: fadeIn ease-in 20s;
+    animation: fadeIn ease-in 10s;
     
 }
 
@@ -12,7 +12,7 @@
     }
 
     100% {
-        opacity: 90%;
+        opacity: 100%;
     }
     
 }
