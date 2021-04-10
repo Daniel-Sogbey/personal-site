@@ -73,13 +73,14 @@ class App extends Component {
 							/>
 						</div>
 						<div className={classes.rightC}>
-							<div className={classes.updates}>
-								<Updates />
-								<hr className={(classes.dottedLines, classes.lines)} />
-							</div>
-							<div className={classes.contact}>
-								<Contact />
-							</div>
+							{/* <div className={classes.updates}> */}
+							{/* <Updates /> */}
+							{/* <hr className={(classes.dottedLines, classes.lines)}  */}
+							{/* </div> */}
+							{/*  */}
+							{/* <div className={classes.contact}> */}
+							{/* <Contact /> */}
+							{/* </div> */}
 						</div>
 
 						<Switch>
